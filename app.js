@@ -57,10 +57,10 @@ app.use("/images", campgroundRoutes);
 app.use("/images/:id/comments", commentRoutes);
 
 
-app.listen(3001, function(){
+//app.listen(3001, function(){
+//   console.log("The Server Has Started!");
+//});
+
+app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The Server Has Started!");
 });
-
-//app.listen(process.env.PORT, process.env.IP, function(){
-//   console.log("The YelpCamp Server Has Started!");
-//});
